@@ -1,14 +1,63 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 body {
-  background: linear-gradient(rgba(10, 34, 61, 0.603),rgba(10, 25, 43, 0.603)), url('../images/bg-header.jpg')  ;
-  background-attachment: fixed;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(rgba(11, 22, 44, 0.9),rgba(6, 19, 43, 0.9)), url('../images/bg-header.jpg');
   background-size: cover;
-  color: #ffffff;
-  background-repeat: no-repeat;
+  height: 100vh;
+}
 
+h1 {
+    letter-spacing: 4px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.countDown {
+  margin-top: 50px;
+}
+.countdown-wrapper {
+  height: 100%;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    color: #ffffff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    margin: 10px;
+    padding-top: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.countdown-item span {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.countdown-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
 }
