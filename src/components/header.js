@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
 
   const data = useStaticQuery(graphql`
   query {
-    wtnLogo: file(relativePath: { eq: "wtn.png" }) {
+    dtcLogo: file(relativePath: { eq: "wtn.png" }) {
       childImageSharp {
         fluid(maxWidth: 100) {
           ...GatsbyImageSharpFluid
@@ -29,7 +29,7 @@ return (
      <nav className={ NavStyles.navbar }>
        <div className="logo">
          
-    <Img style={{ width: '120px' }} fluid={data.wtnLogo.childImageSharp.fluid} />
+    {/* <Img style={{ width: '120px' }} fluid={data.dtcLogo.childImageSharp.fluid} /> */}
        </div>
        <ul>
          <li></li>
