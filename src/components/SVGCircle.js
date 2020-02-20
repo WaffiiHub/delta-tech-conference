@@ -57,7 +57,7 @@ const CountDown = ({ timeTillDate, timeFormat }) => {
         var start = polarToCartesian(x, y, radius, endAngle);
         var end = polarToCartesian(x, y, radius, startAngle);
     
-        var largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
+        var largeArcFlag = endAngle - startAngle <= 180 ? '1' : '1';
     
         var d = [
             'M',

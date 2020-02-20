@@ -3,25 +3,45 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:600,700|Quicksand:500&display=swap');
 body {
   font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(rgba(11, 22, 44, 0.9),rgba(6, 19, 43, 0.9)), url('../images/bg-header.jpg');
-  background-size: cover;
-  height: 100vh;
 }
 
+.bg-head {
+  background: linear-gradient(rgba(11, 22, 44, 0.9),rgba(6, 19, 43, 0.9)), url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+ padding: 100px 0;
+ height: 100vh;
+
+}
+.container {
+  max-width: 1400px;
+}
 h1 {
-    letter-spacing: 4px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 45px;
-    text-transform: uppercase;
+    font-weight: 600;
+   ;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    
+}
+.header {
+  color: #fff;
+  padding: 100px 0;
+  
+}
+.header h1 {
+  font-size: 70px
+
+}
+.header p {
+  font-size: 22px;
 }
 .countDown {
   margin-top: 50px;
+  color: #ffffff;
+  font-size: 40px;
 }
 .countdown-wrapper {
   height: 100%;
@@ -49,6 +69,7 @@ h1 {
 
 .countdown-item span {
     color: #ffffff;
+    font-size: 40px;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -61,3 +82,4 @@ h1 {
   width: 300px;
   height: 300px;
 }
+

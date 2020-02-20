@@ -24,11 +24,11 @@ class Countdown extends React.Component {
 		}, 1000);
 	}
 
-	componentWillUnmount() {
-		if(this.interval) {
-			clearInterval(this.interval);
-		}
-	}
+	// componentWillUnmount() {
+	// 	if(this.interval) {
+	// 		clearInterval(this.interval);
+	// 	}
+	// }
 	
 	render() {
 		const { days, hours, minutes, seconds } = this.state;
@@ -37,13 +37,10 @@ class Countdown extends React.Component {
 		const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
 		const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
 
-		if(!seconds) {
-			return null;
-		}
+	
 		
 		return (
 			<div className="countDown">
-				<h1>Coming Soon</h1>
 				<div className='countdown-wrapper'>
 					{days && (
 						<div className='countdown-item'>
