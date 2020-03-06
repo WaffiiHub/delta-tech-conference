@@ -26,15 +26,15 @@ return (
   
   <header>
     <div>
-     {/* <nav className={ NavStyles.navbar }> */}
-       {/* <div className="logo"> */}
+     <nav className={ NavStyles.navbar }>
+       <div className="logo">
          
-    {/* <Img style={{ width: '120px' }} fluid={data.dtcLogo.childImageSharp.fluid} /> */}
-       {/* </div> */}
-       {/* <ul> */}
-         {/* <li></li> */}
-       {/* </ul> */}
-     {/* </nav> */}
+    <Img style={{ width: '120px' }} fluid={data.dtcLogo.childImageSharp.fluid} />
+       </div>
+       <ul>
+         <li></li>
+       </ul>
+     </nav>
     </div>
   </header>
 

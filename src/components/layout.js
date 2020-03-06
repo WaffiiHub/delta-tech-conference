@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle="Warri Tech Network" />
+      {/* <Header siteTitle="Warri Tech Network" /> */}
       <div
         
       >
