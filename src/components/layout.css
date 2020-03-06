@@ -3,9 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:600,700|Quicksand:500&display=swap');
+
+@font-face {
+  font-family: "sans g";
+  src: url('../fonts/sans-g.ttf') format('truetype');
+  font-weight: normal;
+}
+
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'sans g', sans-serif;
 }
 
 .bg-head {
@@ -13,7 +19,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
  padding: 100px 0;
- height: 100%;
+ height: 100vh;
 
 }
 .container {
@@ -22,7 +28,7 @@ body {
 h1 {
     font-weight: 600;
    ;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'sans g', sans-serif;
     text-transform: capitalize;
     
 }

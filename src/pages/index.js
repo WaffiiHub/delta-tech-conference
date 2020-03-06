@@ -5,11 +5,24 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Countdown from '../components/CountDown';
+import Typed from 'typed.js';
+
 
 const IndexPage = () => {
+
+
+  useEffect(() => {
+    let typed = new Typed('.echo', {
+      strings: ["Biggest", "Largest"],
+      loop: true,
+      loopCount: Infinity,
+      typeSpeed: 150
+    });
+    
+
+  }, [])
  
 
-  
   return(
     <Layout>  
     <SEO title="Home" />
@@ -18,7 +31,7 @@ const IndexPage = () => {
       <div className="header">
       <Row className="">
         <Col md="6 mt-3">
-        <h1>The <span className="text-success">largest</span> Tech conference in Niger Delta  </h1>
+  <h1>The <span className="text-success echo"></span> Tech conference in Niger Delta  </h1>
 
         <h6 className="mt-3"> August 14th-15th 2020</h6>
         </Col>
@@ -73,7 +86,14 @@ const IndexPage = () => {
        <Row>
          <Col md="6">
 
-           <h1>What is <span className="text-success">Delta Tech Conference</span>?</h1>
+           <h1>What is <span className="text-success letters">
+           Delta Tech Conference</span>?</h1>
+
+           <h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters">Beautiful Question<span className="text-success"> !</span></span>
+  </span>
+</h1>
          </Col>
          <Col>
          <p className="desc">We’re a company from Dublin, Ireland, that holds events across the world: Web Summit in Lisbon, Collision in Toronto, and RISE in Hong Kong.
@@ -93,6 +113,21 @@ The New York Times that we assemble “a grand conclave of the tech industry’s
 
      </Container>
 
+   </section>
+
+   <section>
+     <Container>
+       <h1>Some keynote speakers for <span className="text-success">2020</span></h1>
+
+       <Row>
+         <Col md="6">
+         </Col>
+
+         <Col md="6">
+         </Col>
+       </Row>
+    
+     </Container>
    </section>
 
 
