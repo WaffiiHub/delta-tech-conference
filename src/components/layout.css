@@ -4,24 +4,54 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-
-body {
-  font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(rgba(11, 22, 44, 0.9),rgba(6, 19, 43, 0.9)), url('../images/bg-header.jpg');
-  background-size: cover;
-  height: 100vh;
+@font-face {
+  font-family: "sans g";
+  src: url('../fonts/sans-g.ttf') format('truetype');
+  font-weight: normal;
 }
 
+body {
+  font-family: 'sans g', sans-serif;
+}
+
+.bg-head {
+  background: linear-gradient(rgba(11, 22, 44, 0.4),rgba(6, 19, 43, 0.4)), url('../images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+ padding: 100px 0;
+ height: 100vh;
+
+}
+.container {
+  max-width: 1400px;
+}
 h1 {
-    letter-spacing: 4px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 45px;
-    text-transform: uppercase;
+    font-weight: 600;
+   ;
+    font-family: 'sans g', sans-serif;
+    text-transform: capitalize;
+    
+}
+
+section {
+  padding: 6rem 0;
+}
+.header {
+  color: #fff;
+  padding: 100px 0;
+  
+}
+.header h1 {
+  font-size: 70px
+
+}
+.header p {
+  font-size: 22px;
 }
 .countDown {
   margin-top: 50px;
+  color: #ffffff;
+  font-size: 40px;
 }
 .countdown-wrapper {
   height: 100%;
@@ -34,14 +64,15 @@ h1 {
 
 .countdown-item {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     line-height: 30px;
-    margin: 10px;
-    padding-top: 10px;
+    margin: 15px;
+    padding: 50px;
+    padding-top: 70px;
     position: relative;
     width: 100px;
     height: 100px;
@@ -49,6 +80,7 @@ h1 {
 
 .countdown-item span {
     color: #ffffff;
+    margin: 10px 0;
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -60,4 +92,14 @@ h1 {
   left: 0;
   width: 300px;
   height: 300px;
+}
+
+.cta-register {
+  padding: 8px 70px;
+}
+
+
+.stats {
+  color: #fff;
+  font-size: 1.8rem !important;
 }
