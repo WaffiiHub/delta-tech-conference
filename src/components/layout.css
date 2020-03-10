@@ -18,12 +18,15 @@ body {
   background: linear-gradient(rgba(11, 22, 44, 0.4),rgba(6, 19, 43, 0.4)), url('../images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
- padding: 100px 0;
- height: 100vh;
+ /* padding: 100px 0; */
+ height: 100%;
 
 }
 .container {
-  max-width: 1400px;
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 20px;  
+  width: 100%;
 }
 h1 {
     font-weight: 600;
@@ -102,4 +105,15 @@ section {
 .stats {
   color: #fff;
   font-size: 1.8rem !important;
+}
+.speakers {
+  
+    -webkit-transform: skewY(7deg);
+    transform: skewY(7deg);
+    background: #e8f1f2;
+    padding: 9rem  0;
+    background-size: cover;
+}
+.speakers .container {
+  transform: skewY(-7deg);
 }
