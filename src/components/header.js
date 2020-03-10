@@ -6,19 +6,7 @@ import NavStyles from '../styles/nav.module.scss';
 
 const Header = ({ siteTitle }) => {
 
-  const data = useStaticQuery(graphql`
-  query {
-    dtcLogo: file(relativePath: { eq: "wtn.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-
-  }
-`)
+ 
 
 
 
