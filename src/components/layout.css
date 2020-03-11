@@ -9,7 +9,9 @@
   src: url('../fonts/sans-g.ttf') format('truetype');
   font-weight: normal;
 }
-
+html {
+  height: 100%;
+}
 body {
   font-family: 'sans g', sans-serif;
 }
@@ -116,4 +118,10 @@ section {
 }
 .speakers .container {
   transform: skewY(-7deg);
+}
+
+
+footer {
+  background-color: #0d2f65;
+  height: 100%;
 }

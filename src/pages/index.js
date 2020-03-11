@@ -237,9 +237,7 @@ The New York Times that we assemble “a grand conclave of the tech industry’s
      <Img  style={{ width: '180px' }} fluid={data.wtnLogo.childImageSharp.fluid}/>
      </Col>
    </Row>
-   <Row>
-     <Col></Col>
-   </Row>
+  
      </Container>
    </section>
 
@@ -248,6 +246,19 @@ The New York Times that we assemble “a grand conclave of the tech industry’s
      <Container>
 
    <h1>Some of our <span className="text-success">Partners</span></h1>
+
+   <Row className="mt-5">
+     <Col md="2" xs="6">
+     <Img  style={{ width: '180px' }} fluid={data.wtnLogo.childImageSharp.fluid}/>
+     </Col>
+
+     <Col md="2" xs="6">
+     <Img  style={{ width: '180px' }} fluid={data.wtnLogo.childImageSharp.fluid}/>
+     </Col>
+   </Row>
+  
+
+   
      </Container>
    </section>
 
